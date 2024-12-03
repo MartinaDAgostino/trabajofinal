@@ -1,0 +1,375 @@
+
+
+body{background-color: beige;
+     font-family: Arial, sans-serif;}
+
+header{display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;}
+
+header.logo{flex: 1;
+           display: flex;
+          justify-content: flex-start;}
+
+header.titulo{flex: 2;
+           text-align: center;}
+header.iconos{flex: 1;
+             text-align: right;}
+
+.titulo {font-family: 'Shrikhand', sans-serif;
+               justify-content: flex-start;
+
+               font-size: 2em;
+             }
+
+
+.logo{background-image: url(fotos/logo.png);
+      width: 250px;
+      height: 200px;
+      margin-top: 15px;
+    display: flex;
+  justify-content: flex-end;}
+
+.modo-inclusivo{ background-color: black;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;}
+
+.modo-inclusivo: hover{ background-color: #0056b3;}
+
+body.receta.inclusivo.modo-inclusivo {background-color: black;}
+
+
+.iconos{text-align: right;}
+.iconos img{width: 200%;
+             height: 200%;
+             max-width: 85px;
+             border-radius: 50%;
+             color:pink;
+             list-style: none;
+             justify-content: flex-end;
+             overflow-clip-margin: content-box;
+            padding: 0;}
+.iconos a{display: inline-block;
+           text-decoration: underline;
+          padding: 0;
+          margin: 0 8px;
+          transition: color: 0.3;}
+.iconos a:hover{ transform: scale(1.2);}
+
+.modo-inclusivo{
+    justify-content: center;
+    display: block;
+     margin: 0 auto;
+     padding: 20px 10px;
+     font-size: 16px;
+     color: #fff;
+     background-color: black;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s ease;
+}
+
+
+}
+
+body.inclusivo .modo-inclusivo{ background-color: beige;
+                                color: #2c2c2c;
+                              justify-content: center;}
+
+body.inclusivo{background-color: #666!important; color: #fff !important;}
+
+body.inclusivo.modo-inclusivo: hover{ background-color: beige;}
+
+body.inclusivo.datos-creador{ background-color: #555;
+                              color: violet;
+                            justify-content: center;}
+
+body.inclusivo.datos-creador: hover{ background-color: violet;
+                                     justify-content: center;}
+                                     .carousel {
+                                       position: relative;
+                                       width: 80%;
+                                       margin: 40px auto;
+                                       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                     }
+
+                                     .nav {
+                                       background-color: black;
+                                       padding: 1rem;
+                                       display: flex;
+                                       justify-content: flex-end;
+                                       align-items: center;
+                                     }
+
+                                     .nav-item {
+                                       margin-left: 20px;
+                                     }
+
+                                     .nav-link {
+                                       color: #fff;
+                                       text-decoration: none;
+                                       transition: color 0.2s ease;
+                                     }
+
+                                     .nav-link:hover {
+                                       color: #ccc;
+                                     }
+
+                                     .nav-link.active {
+                                       color: #fff;
+                                       border-bottom: 2px solid #fff;
+                                     }
+
+                                     .nav-link.disabled {
+                                       color: #666;
+                                       pointer-events: none;
+                                     }
+
+                                     .carousel-inner {
+                                       width: 100%;
+                                       height: 500px;
+                                       position: relative;
+                                     }
+
+                                     .carousel-item {
+                                       width: 100%;
+                                       height: 100%;
+                                       position: absolute;
+                                       top: 0;
+                                       left: 0;
+                                       opacity: 0;
+                                       transition: opacity 1s;
+                                     }
+
+                                     .carousel-item.active {
+                                       opacity: 1;
+                                     }
+
+                                     .carousel-item img {
+                                       width: 100%;
+                                       height: 100%;
+                                       object-fit: cover;
+                                     }
+
+                                     .carousel-control-prev, .carousel-control-next {
+                                       position: absolute;
+                                       top: 50%;
+                                       transform: translateY(-50%);
+                                       background-color: rgba(0, 0, 0, 0.5);
+                                       color: #fff;
+                                       border: none;
+                                       padding: 10px 20px;
+                                       font-size: 16px;
+                                       cursor: pointer;
+                                     }
+
+                                     .carousel-control-prev {
+                                       left: 0;
+                                     }
+
+                                     .carousel-control-next {
+                                       right: 0;
+                                     }
+
+                                     .carousel-indicators {
+                                       position: absolute;
+                                       bottom: 0;
+                                       left: 50%;
+                                       transform: translateX(-50%);
+                                       list-style: none;
+                                       margin: 0;
+                                       padding: 0;
+                                     }
+
+                                     .carousel-indicators li {
+                                       display: inline-block;
+                                       width: 10px;
+                                       height: 10px;
+                                       border-radius: 50%;
+                                       background-color: #fff;
+                                       margin: 0 5px;
+                                       cursor: pointer;
+                                     }
+
+                                     .carousel-indicators .active {
+                                       background-color: #333;
+                                     }
+
+
+h1{font-family: 'Shrikhand', sans-serif;
+               justify-content: center;
+               display: flex;
+
+               font-size: 2em;}
+h2{ font-family: 'Shrikhand', sans-serif;
+               justify-content: center;
+              display: flex;
+               font-size: 2em
+             }
+
+.card-img-top{height: 260px;
+              width: 250px;
+              }
+.card-text{font-family: 'Shrikhand', sans-serif;
+               justify-content: space-between;
+             font-size: 2em;}
+
+
+             .tarjetas {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content:center;
+               flex-direction: row;
+               gap: 20px;
+             }
+
+
+             @media (max-width: 480px) {
+               .tarjetas {
+                 flex-direction: row;
+                 align-items: stretch;
+               }
+               .card {
+                 width: 100%;
+                 margin-bottom: 20px;
+               }
+             }
+
+
+             @media (min-width: 481px) and (max-width: 768px) {
+               .tarjetas {
+                 flex-direction: row;
+                 justify-content: center;
+               }
+               .card {
+                 width: 45%;
+                 margin-bottom: 20px;
+               }
+             }
+
+
+             @media (min-width: 769px) {
+               .tarjetas {
+                 flex-direction: row;
+                 justify-content: center;
+               }
+               .card {
+                 width: 30%;
+                 margin-bottom: 20px;
+               }
+             }
+
+.ruta{ background-color: grey;
+        border-radius: 6px;
+        border: none;
+        color: black;
+        text-decoration: none;
+        justify-content: flex-end;
+        font-size: 100%;
+        margin: 30px;
+        padding: 0;}
+
+
+footer{background-color: grey;
+       color: black;
+       margin: 0;
+       text-align: center;
+        padding: 20px;}
+
+        .boton-creador {
+          background-color: burlywood;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .boton-creador:hover {
+          background-color: black;
+        }
+
+        .nombre-creador {
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        .info-creador {
+          font-size: 14px;
+          color: #ccc;
+        }
+
+.description{ font-size: 130%;}
+
+.volver {
+	background-color: burlywood;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.volver: hover {
+	background-color: #555;
+}
+
+.redes{text-align: center;
+        padding: 20px;}
+
+.redes img{width: 300%;
+           height: 300%;
+           max-width: 85px;
+          border-radius: 50%;
+          color:pink;
+         justify-content:flex-end;
+          overflow-clip-margin: content-box;
+           padding: 0;}
+
+.redes li{list-style-type:none;
+          display: inline-block;}
+.redes a{display: inline-block;
+          text-decoration: none;
+          padding: 0;
+          margin: 0 10px;
+          transition: color: 0.3 ease;}
+.redes a:hover{transform: scale(1.2);
+               color: violet;}
+.whatsapp-flotante{position: fixed;
+                   bottom: 20px;
+                   right: 10px;
+                   padding: 10px;
+                   z-index: auto;}
+.whatsapp-flotante img{ width: 120px;
+                       height: 130px;
+                       border-radius: 50% 50%;}
+
+@media (max-width: 767px){
+       .corazon{display: block;}
+     }
+
+@media (max-width:700px) {
+       .libros { display: flex;
+                justify-content: center;
+                 align-items: center;
+                 text-align: center;}}
+
+
+
+  @media (min-width:701px) and (max-width:900px) {
+
+  .iconos{
+  flex-direction: row;
+       }
+
+  }
+@media (min-width: 901px) {
+  .recetas-similares{
+    display: flex;
+  }
